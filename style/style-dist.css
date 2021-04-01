@@ -38,7 +38,7 @@ a.nav-link {
   text-align: center;
   width: 200px;
   font-family: Rubik_m;
-  font-size: 25px;
+  font-size: 1.3vw;
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
@@ -68,6 +68,7 @@ h1 {
 .old {
   text-align: center;
   padding-top: 5%;
+  margin-bottom: 8%;
 }
 .old ul {
   display: inline-block;
@@ -83,4 +84,205 @@ h1 {
   font-weight: 400;
   text-transform: uppercase;
   color: #2b3443;
+}
+
+.about_us {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.about_us img.img_roof {
+  margin-bottom: 6%;
+}
+
+h3 {
+  font-family: XeniaExtended;
+  font-size: 1.9vw;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #2b3443;
+  text-align: center;
+  margin-bottom: 15%;
+}
+
+.we ul {
+  list-style-type: none;
+}
+.we ul li {
+  font-family: Rubik_m;
+  font-size: 1.9vw;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #2b3443;
+  margin-bottom: 6%;
+}
+
+.production {
+  width: 100%;
+}
+.production h3 {
+  margin-bottom: 2%;
+}
+.production img {
+  width: 99%;
+}
+
+.metal_card_1 {
+  width: 100%;
+}
+.metal_card_1 h3 {
+  margin-bottom: 3%;
+}
+
+.card_1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.card_number_1 {
+  background: url("../images/1img_1380.png");
+  width: 271px;
+  height: 374px;
+  background-position: center;
+  background-size: cover;
+  margin: 1% auto;
+}
+
+.card_number_2 {
+  background: url("../images/2img_1381.png");
+  width: 271px;
+  height: 374px;
+  background-position: center;
+  background-size: cover;
+  margin: 1% auto;
+}
+
+.card_number_3 {
+  background: url("../images/3img_1383.png");
+  width: 271px;
+  height: 374px;
+  background-position: center;
+  background-size: cover;
+  margin: 1% auto;
+}
+
+.card_number_4 {
+  background: url("../images/4img_1384.png");
+  width: 271px;
+  height: 374px;
+  background-position: center;
+  background-size: cover;
+  margin: 1% auto;
+}
+
+.card_number_5 {
+  background: url("../images/5img_1418.png");
+  width: 271px;
+  height: 374px;
+  background-position: center;
+  background-size: cover;
+  margin: 1% auto;
+}
+
+.card_number_6 {
+  background: url("../images/6img_1425.png");
+  width: 271px;
+  height: 374px;
+  background-position: center;
+  background-size: cover;
+  margin: 1% auto;
+}
+
+.card_number_7 {
+  background: url("../images/7img_1427.png");
+  width: 271px;
+  height: 374px;
+  background-position: center;
+  background-size: cover;
+  margin: 1% auto;
+}
+
+.card_number_8 {
+  background: url("../images/8img_1429.png");
+  width: 271px;
+  height: 374px;
+  background-position: center;
+  background-size: cover;
+  margin: 1% auto;
+}
+
+.card_number_9 {
+  background: url("../images/9img_1431.png");
+  width: 271px;
+  height: 374px;
+  background-position: center;
+  background-size: cover;
+  margin: 1% auto;
+}
+
+.card_number_10 {
+  background: url("../images/10img_1433.png");
+  width: 271px;
+  height: 374px;
+  background-position: center;
+  background-size: cover;
+  margin: 1% auto;
+}
+
+.card_number_11 {
+  background: url("../images/11img_1435.png");
+  width: 271px;
+  height: 374px;
+  background-position: center;
+  background-size: cover;
+  margin: 1% auto;
+}
+
+.card_number_12 {
+  background: url("../images/12img_1438.png");
+  width: 271px;
+  height: 374px;
+  background-position: center;
+  background-size: cover;
+  margin: 1% auto;
+}
+
+.card_number_13 {
+  background: url("../images/13img_1441.png");
+  width: 271px;
+  height: 374px;
+  background-position: center;
+  background-size: cover;
+  margin: 1% auto;
+}
+
+.card_number_14 {
+  background: url("../images/14img_1443.png");
+  width: 271px;
+  height: 374px;
+  background-position: center;
+  background-size: cover;
+  margin: 1% auto;
+}
+
+.card_number_15 {
+  background: url("../images/15img_1446.png");
+  width: 271px;
+  height: 374px;
+  background-position: center;
+  background-size: cover;
+  margin: 1% auto;
+}
+
+.card_number_16 {
+  background: url("../images/16img_1448.png");
+  width: 271px;
+  height: 374px;
+  background-position: center;
+  background-size: cover;
+  margin: 1% auto;
 }
