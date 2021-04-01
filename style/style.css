@@ -13,8 +13,13 @@
 
 body {
   max-width: 1920px;
-  height: 5765px;
+  height: auto;
   background: grey url("../images/Fon_body.png") 0 0/100% 100% no-repeat;
+}
+
+main {
+  width: 100%;
+  margin-bottom: 222px;
 }
 
 .wrapper {
@@ -285,4 +290,101 @@ h3 {
   background-position: center;
   background-size: cover;
   margin: 1% auto;
+}
+
+.cont_phone_center {
+  width: 100%;
+}
+.cont_phone_center h3 {
+  margin-bottom: 3%;
+}
+
+.card_number_17 {
+  background: url("../images/17img_1467.png");
+  width: 271px;
+  height: 374px;
+  background-position: center;
+  background-size: cover;
+  margin: 1% auto;
+}
+
+.card_number_18 {
+  background: url("../images/18img_1494.png");
+  width: 271px;
+  height: 374px;
+  background-position: center;
+  background-size: cover;
+  margin: 1% auto;
+}
+
+.card_number_19 {
+  background: url("../images/19img_1496.png");
+  width: 271px;
+  height: 374px;
+  background-position: center;
+  background-size: cover;
+  margin: 1% auto;
+}
+
+.card_number_20 {
+  background: url("../images/20img_1499.png");
+  width: 271px;
+  height: 374px;
+  background-position: center;
+  background-size: cover;
+  margin: 1% auto;
+}
+
+.other {
+  width: 100%;
+  padding-top: 3%;
+  margin-top: 13%;
+}
+.other h3 {
+  text-align: left;
+  padding-left: 4%;
+  margin-bottom: 2%;
+}
+.other .other_card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.other_card_21 {
+  width: 570px;
+  height: 270px;
+  background: url("../images/21img_1506.png");
+  background-position: center;
+  background-size: cover;
+  margin: 1% -2%;
+}
+
+.announcement {
+  width: 368px;
+  height: 174px;
+  background-color: white;
+  margin-top: 5%;
+}
+
+footer {
+  width: 100%;
+  height: 471px;
+  background-color: #5f6e81;
+}
+
+.contact_local {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.map_footer {
+  margin-top: -33%;
+}
+
+.contact_inet {
+  text-align: center;
+  width: 100%;
+  margin-top: 3%;
 }
