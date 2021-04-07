@@ -6,6 +6,18 @@
   font-family: XeniaExtended;
   src: url(../fonts/xeniaextended.ttf);
 }
+@font-face {
+  font-family: RubikBold;
+  src: url(../fonts/Rubik-Bold.ttf);
+}
+@font-face {
+  font-family: RubikRegular;
+  src: url(../fonts/Rubik-Regular.ttf);
+}
+@font-face {
+  font-family: RubikMedium;
+  src: url(../fonts/Rubik-Medium.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -17,22 +29,49 @@ body {
   background: grey url("../images/Fon_body.png") 0 0/100% 100% no-repeat;
 }
 
+a.button-top {
+  display: none;
+  position: fixed;
+  background-color: #b1b4b8af;
+  bottom: 100px;
+  right: 21px;
+  z-index: 99;
+  margin-top: 50px;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-user-select: none;
+          user-select: none;
+  padding: 0.5em 2em;
+  outline: none;
+  border: 2px solid #444647;
+  border-radius: 11px;
+  transition: 0.2s;
+}
+
+a.button-top:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+a.button-top:active {
+  background: #4b5055b2;
+}
+
 main {
   width: 100%;
-  margin-bottom: 222px;
+  margin-bottom: 16%;
 }
 
 .wrapper {
   max-width: 1170px;
   margin: 0 auto;
   height: 100%;
-  border: 2px solid blue;
 }
 
 header {
   width: 100%;
   padding-top: 3%;
-  margin-bottom: 175px;
+  margin-bottom: 15%;
 }
 
 .nav-item {
@@ -60,27 +99,38 @@ a.nav-link.link_phone {
   width: 270px;
 }
 
+.nav-link:hover {
+  background: #C77777;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
+  color: white;
+  transform: translateY(-7px);
+}
+
 h1 {
   font-family: XeniaExtended;
   text-align: center;
   font-size: 3vw;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: bold;
   text-transform: uppercase;
   color: #2b3443;
 }
 
 .old {
+  width: 100%;
+  padding-left: 3%;
   text-align: center;
   padding-top: 5%;
-  margin-bottom: 8%;
+  margin-bottom: 10%;
 }
 .old ul {
   display: inline-block;
-  padding: 2%;
+  padding: 2.4%;
   list-style-type: none;
   border-top: 14px solid #5f6e81;
   border-bottom: 14px solid #5f6e81;
+  font-weight: bold;
+  margin-top: -2%;
 }
 .old ul li {
   font-family: XeniaExtended;
@@ -91,13 +141,39 @@ h1 {
   color: #2b3443;
 }
 
+.img_roof:hover {
+  transform: rotate(720deg) scale(1.2, 1.2);
+  transition: all 2s ease 1s;
+  -webkit-transition: all 2s ease 1s;
+  -moz-transition: all 2s ease 1s;
+  -ms-transition: all 2s ease 1s;
+  -o-transition: all 2s ease 1s;
+  -webkit-transform: rotate(720deg) scale(1.2, 1.2);
+  -moz-transform: rotate(720deg) scale(1.2, 1.2);
+  -ms-transform: rotate(720deg) scale(1.2, 1.2);
+  -o-transform: rotate(720deg) scale(1.2, 1.2);
+}
+
+.img_roof:not(hover) {
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
 .about_us {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 .about_us img.img_roof {
   margin-bottom: 6%;
+  width: 30.3vw;
+}
+.about_us h3 {
+  font-family: RubikBold;
 }
 
 h3 {
@@ -111,11 +187,13 @@ h3 {
   margin-bottom: 15%;
 }
 
+.we {
+  font-family: RubikBold;
+}
 .we ul {
-  list-style-type: none;
+  list-style-image: url("../images/marker_circle_3_1298.png");
 }
 .we ul li {
-  font-family: Rubik_m;
   font-size: 1.9vw;
   line-height: 1.2;
   font-weight: 700;
@@ -148,6 +226,12 @@ h3 {
   width: 100%;
 }
 
+.c_d {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
 .card_number_1 {
   background: url("../images/1img_1380.png");
   width: 271px;
@@ -155,6 +239,12 @@ h3 {
   background-position: center;
   background-size: cover;
   margin: 1% auto;
+}
+.card_number_1 h5 {
+  font-family: Rubik_m;
+}
+.card_number_1 p {
+  font-family: RubikRegular;
 }
 
 .card_number_2 {
@@ -165,6 +255,12 @@ h3 {
   background-size: cover;
   margin: 1% auto;
 }
+.card_number_2 h5 {
+  font-family: Rubik_m;
+}
+.card_number_2 p {
+  font-family: RubikRegular;
+}
 
 .card_number_3 {
   background: url("../images/3img_1383.png");
@@ -173,6 +269,12 @@ h3 {
   background-position: center;
   background-size: cover;
   margin: 1% auto;
+}
+.card_number_3 h5 {
+  font-family: Rubik_m;
+}
+.card_number_3 p {
+  font-family: RubikRegular;
 }
 
 .card_number_4 {
@@ -183,6 +285,12 @@ h3 {
   background-size: cover;
   margin: 1% auto;
 }
+.card_number_4 h5 {
+  font-family: Rubik_m;
+}
+.card_number_4 p {
+  font-family: RubikRegular;
+}
 
 .card_number_5 {
   background: url("../images/5img_1418.png");
@@ -191,6 +299,12 @@ h3 {
   background-position: center;
   background-size: cover;
   margin: 1% auto;
+}
+.card_number_5 h5 {
+  font-family: Rubik_m;
+}
+.card_number_5 p {
+  font-family: RubikRegular;
 }
 
 .card_number_6 {
@@ -201,6 +315,12 @@ h3 {
   background-size: cover;
   margin: 1% auto;
 }
+.card_number_6 h5 {
+  font-family: Rubik_m;
+}
+.card_number_6 p {
+  font-family: RubikRegular;
+}
 
 .card_number_7 {
   background: url("../images/7img_1427.png");
@@ -209,6 +329,12 @@ h3 {
   background-position: center;
   background-size: cover;
   margin: 1% auto;
+}
+.card_number_7 h5 {
+  font-family: Rubik_m;
+}
+.card_number_7 p {
+  font-family: RubikRegular;
 }
 
 .card_number_8 {
@@ -219,6 +345,12 @@ h3 {
   background-size: cover;
   margin: 1% auto;
 }
+.card_number_8 h5 {
+  font-family: Rubik_m;
+}
+.card_number_8 p {
+  font-family: RubikRegular;
+}
 
 .card_number_9 {
   background: url("../images/9img_1431.png");
@@ -227,6 +359,12 @@ h3 {
   background-position: center;
   background-size: cover;
   margin: 1% auto;
+}
+.card_number_9 h5 {
+  font-family: Rubik_m;
+}
+.card_number_9 p {
+  font-family: RubikRegular;
 }
 
 .card_number_10 {
@@ -237,6 +375,12 @@ h3 {
   background-size: cover;
   margin: 1% auto;
 }
+.card_number_10 h5 {
+  font-family: Rubik_m;
+}
+.card_number_10 p {
+  font-family: RubikRegular;
+}
 
 .card_number_11 {
   background: url("../images/11img_1435.png");
@@ -245,6 +389,12 @@ h3 {
   background-position: center;
   background-size: cover;
   margin: 1% auto;
+}
+.card_number_11 h5 {
+  font-family: Rubik_m;
+}
+.card_number_11 p {
+  font-family: RubikRegular;
 }
 
 .card_number_12 {
@@ -255,14 +405,26 @@ h3 {
   background-size: cover;
   margin: 1% auto;
 }
+.card_number_12 h5 {
+  font-family: Rubik_m;
+}
+.card_number_12 p {
+  font-family: RubikRegular;
+}
 
 .card_number_13 {
-  background: url("../images/13img_1441.png");
+  background: url("../images/13img_1441-1.png");
   width: 271px;
   height: 374px;
   background-position: center;
   background-size: cover;
   margin: 1% auto;
+}
+.card_number_13 h5 {
+  font-family: Rubik_m;
+}
+.card_number_13 p {
+  font-family: RubikRegular;
 }
 
 .card_number_14 {
@@ -273,14 +435,26 @@ h3 {
   background-size: cover;
   margin: 1% auto;
 }
+.card_number_14 h5 {
+  font-family: Rubik_m;
+}
+.card_number_14 p {
+  font-family: RubikRegular;
+}
 
 .card_number_15 {
-  background: url("../images/15img_1446.png");
+  background: url("../images/15img_1446-1.png");
   width: 271px;
   height: 374px;
   background-position: center;
   background-size: cover;
   margin: 1% auto;
+}
+.card_number_15 h5 {
+  font-family: Rubik_m;
+}
+.card_number_15 p {
+  font-family: RubikRegular;
 }
 
 .card_number_16 {
@@ -291,12 +465,23 @@ h3 {
   background-size: cover;
   margin: 1% auto;
 }
+.card_number_16 h5 {
+  font-family: Rubik_m;
+}
+.card_number_16 p {
+  font-family: RubikRegular;
+}
 
 .cont_phone_center {
   width: 100%;
 }
 .cont_phone_center h3 {
   margin-bottom: 3%;
+  color: #5f6e81;
+  font-family: RubikBold;
+}
+.cont_phone_center h3 b {
+  color: #2b3443;
 }
 
 .card_number_17 {
@@ -307,6 +492,12 @@ h3 {
   background-size: cover;
   margin: 1% auto;
 }
+.card_number_17 h5 {
+  font-family: Rubik_m;
+}
+.card_number_17 p {
+  font-family: RubikRegular;
+}
 
 .card_number_18 {
   background: url("../images/18img_1494.png");
@@ -315,6 +506,12 @@ h3 {
   background-position: center;
   background-size: cover;
   margin: 1% auto;
+}
+.card_number_18 h5 {
+  font-family: Rubik_m;
+}
+.card_number_18 p {
+  font-family: RubikRegular;
 }
 
 .card_number_19 {
@@ -325,6 +522,12 @@ h3 {
   background-size: cover;
   margin: 1% auto;
 }
+.card_number_19 h5 {
+  font-family: Rubik_m;
+}
+.card_number_19 p {
+  font-family: RubikRegular;
+}
 
 .card_number_20 {
   background: url("../images/20img_1499.png");
@@ -334,11 +537,17 @@ h3 {
   background-size: cover;
   margin: 1% auto;
 }
+.card_number_20 h5 {
+  font-family: Rubik_m;
+}
+.card_number_20 p {
+  font-family: RubikRegular;
+}
 
 .other {
   width: 100%;
   padding-top: 3%;
-  margin-top: 13%;
+  margin-top: 3%;
 }
 .other h3 {
   text-align: left;
@@ -352,29 +561,77 @@ h3 {
 }
 
 .other_card_21 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
   width: 570px;
   height: 270px;
   background: url("../images/21img_1506.png");
   background-position: center;
   background-size: cover;
   margin: 1% -2%;
+  font-family: Rubik_m;
+  padding-right: 6%;
+  padding-bottom: 3%;
 }
 
 .announcement {
-  width: 368px;
-  height: 174px;
+  position: relative;
+  width: 410px;
+  height: 217px;
   background-color: white;
   margin-top: 5%;
+  padding: 1%;
+  border: 4.4px solid #5f6e81;
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+}
+.announcement h4 {
+  font-family: RubikBold;
+  font-size: 18.3px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #a90000;
+}
+.announcement p {
+  font-weight: 500;
+  text-transform: none;
+  color: #2b3443;
+  font-family: Rubik_m;
+}
+.announcement span {
+  position: absolute;
+  font-size: 9em;
+  color: #a90000;
+  font-weight: bold;
+  bottom: -15%;
+  right: 5%;
 }
 
 footer {
   width: 100%;
-  height: 471px;
+  padding: 1%;
   background-color: #5f6e81;
+  font-family: RubikMedium;
+}
+footer .ul_footer {
+  font-family: RubikMedium;
+  font-size: 1.3vw;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #fcfcf7;
+  list-style: none;
+  margin-top: 10%;
 }
 
 .contact_local {
-  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
 }
@@ -383,8 +640,69 @@ footer {
   margin-top: -33%;
 }
 
+.map_footer:hover {
+  transform: rotate(720deg) scale(1.2, 1.2);
+  transition: all 2s ease 1s;
+  -webkit-transition: all 2s ease 1s;
+  -moz-transition: all 2s ease 1s;
+  -ms-transition: all 2s ease 1s;
+  -o-transition: all 2s ease 1s;
+  -webkit-transform: rotate(720deg) scale(1.2, 1.2);
+  -moz-transform: rotate(720deg) scale(1.2, 1.2);
+  -ms-transform: rotate(720deg) scale(1.2, 1.2);
+  -o-transform: rotate(720deg) scale(1.2, 1.2);
+}
+
+.map_footer:not(hover) {
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
 .contact_inet {
   text-align: center;
   width: 100%;
-  margin-top: 3%;
+  margin-top: 1%;
+}
+.contact_inet ul {
+  font-family: RubikMedium;
+  font-size: 1.3vw;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #fcfcf7;
+  list-style: none;
+  padding: 0;
+}
+.contact_inet a {
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  body {
+    background-size: cover;
+  }
+
+  .old {
+    display: none;
+  }
+
+  .about_us {
+    margin-top: 74%;
+    width: 100%;
+  }
+}
+@media (max-width: 1170px) {
+  .wrapper {
+    max-width: 1170px;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  footer {
+    max-width: 1170px;
+  }
 }
