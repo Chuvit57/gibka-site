@@ -1,4 +1,5 @@
 
+$ (function() {
     // button-top
 var $btnTop = $(".button-top")
 $(window).on("scroll", function(){
@@ -13,4 +14,8 @@ $btnTop.on("click", function(){
     $("html,body").animate({scrollTop:0}, 900)
 });
 
-
+/*let widBody = $("body").width();
+if(widBody > 510){
+    $(".nav-link").css("color", "white");
+};*/
+});
