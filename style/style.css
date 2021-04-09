@@ -183,6 +183,9 @@ h1 {
 .about_us h3 {
   font-family: RubikBold;
 }
+.about_us h3 a:hover {
+  color: brown;
+}
 
 h3 {
   font-family: XeniaExtended;
@@ -491,6 +494,9 @@ h3 {
 .cont_phone_center h3 b {
   color: #2b3443;
 }
+.cont_phone_center h3 a:hover {
+  color: brown;
+}
 
 .img_phone h3 a, .cont_phone_center h3 a {
   color: #B57270;
@@ -640,6 +646,12 @@ footer .ul_footer {
   list-style: none;
   margin-top: 10%;
 }
+footer .ul_footer li a {
+  color: white;
+}
+footer .ul_footer li a:hover {
+  color: brown;
+}
 
 .contact_local {
   max-width: 1170px;
@@ -697,6 +709,9 @@ footer .ul_footer {
 }
 .contact_inet a {
   color: white;
+}
+.contact_inet a:hover {
+  color: brown;
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {

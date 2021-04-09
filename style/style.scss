@@ -83,6 +83,10 @@
     
 }
 
+@mixin aHover {
+    color: brown;
+}
+
 
 
 
@@ -250,6 +254,10 @@ margin-bottom: 10%;
 
         h3 {
             font-family: RubikBold;
+
+            a:hover {
+                @include aHover();
+            }
         }
 }
 
@@ -398,6 +406,10 @@ h3 {
         b {
             color: #2b3443;
         }
+
+            a:hover {
+                @include aHover();
+            }
     }
 }
 
@@ -512,9 +524,21 @@ footer {
     .ul_footer {
         @include ulFooter();
         margin-top: 10%;
+
+        li {
+            a {
+                color: white;
+            }
+
+            a:hover {
+                @include aHover();
+            }
+        }
         
     }
 }
+
+
 
 .contact_local {
     max-width: 1170px;
@@ -557,7 +581,12 @@ height: 494px;
         color: white;
         
     }
+
+    a:hover {
+        @include aHover();
+    }
 }
+
 
 
 @media (min-width: 993px) and (max-width: 1200px) {
@@ -676,12 +705,13 @@ html, body {
     box-sizing: border-box;
     margin: 0;
 }
-  
+  //! убираем скролл
 body {
     overflow-y: scroll;
     width: calc(100% + 20px);
     padding: 8px;
 }
+
 
 }
 
